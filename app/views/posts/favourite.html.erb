@@ -1,0 +1,11 @@
+<h1> Your Favorite Posts</h1>
+
+
+
+<% current_user.favourites.each do |favourite| %>
+
+    <%= link_to favourite.post.title,favourite.post %>
+
+    <br>
+
+    <% end %>

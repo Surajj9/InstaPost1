@@ -1,0 +1,16 @@
+<div class:"container">
+
+<h1> Your Favorite Posts</h1>
+
+
+
+<% current_user.favourites.each do |favourite| %>
+
+    <%= link_to favourite.post.title,favourite.post %>
+
+    <br>
+
+    <% end %>
+
+</div>
+<%= link_to 'Return to posts listing', posts_path %>

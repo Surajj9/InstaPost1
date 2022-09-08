@@ -1,0 +1,44 @@
+<div class="text-center">
+
+<h1>Showing Post details</h1>
+
+<p><strong>Title: </strong><%= @post.title %></p>
+<p><strong>Description: </strong><%= @post.description %></p>
+
+
+  <% if logged_in? && (@post.user == current_user ) %>
+<%= link_to 'Edit', edit_post_path(@post) %> 
+<br>
+<p>to delete the post u must unfavourite it before deleting if the post is favourited </p>
+   <%= link_to 'Delete', post_path(@post), data: { turbo_confirm: 'Are you sure?', turbo_method: :delete }  %>
+   <%end%>
+
+<%= link_to favourite_text,favourites_update_path(post: @post),id:'favourite_link',remote: true %>
+     
+<% pre_like = @post.likes.find { |like| like.user_id == current_user.id} %>
+<% if pre_like %>
+  <%= button_to '👎', post_like_path(@post, pre_like), method: :delete %>
+<% else %>
+  <%= button_to '👍', post_likes_path(@post), method: :post %>
+<% end %>
+
+
+
+<p><%= @post.likes.count %> <%= (@post.likes.count) == 1 ? 'Like' : 'Likes'%></p>
+
+
+<p><strong><%= @post.comments.count %></strong> Comments</p>
+<%= render @post.comments %>
+<h3>Leave a reply</h3>
+<%= render 'comments/form' %>
+
+
+  
+
+
+
+
+
+
+<%= link_to 'Return to posts listing', posts_path %>
+</div>
