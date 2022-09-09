@@ -9,7 +9,7 @@
   <% if logged_in? && (@post.user == current_user ) %>
 <%= link_to 'Edit', edit_post_path(@post) %> 
 <br>
-<p>to delete the post u must unfavourite it before deleting if the post is favourited </p>
+<p>to delete the post u must unfavourite it  if the post is favourited </p>
    <%= link_to 'Delete', post_path(@post), data: { turbo_confirm: 'Are you sure?', turbo_method: :delete }  %>
    <%end%>
 

@@ -1,7 +1,11 @@
 require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "user must logged in" do
+
+    user.email = "ayesha@example.com"
+
+    user.password = "ayesha"
+
+  end
 end
