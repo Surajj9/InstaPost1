@@ -5,13 +5,13 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version --7 required 
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database creation sqllite3
 
 * Database initialization
 
