@@ -29,9 +29,9 @@ https://github.com/Surajj9/InstaPost1.git
   ```
   
  - Start the Rails server
-    ```bash
+  ```bash
   Rails s 
-   ```
+  ```
   
   And now you can visit the site with the URL http://localhost:3000
 
@@ -45,8 +45,8 @@ https://github.com/Surajj9/InstaPost1.git
 
 
 - testing
-  ```bash
+ ```bash
  rails test
-  ```
+ ```
 
 * ...
