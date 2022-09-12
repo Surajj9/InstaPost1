@@ -6,7 +6,7 @@ application up and running.
 To run the application:
 - after cloning or downloading the application file , open the system terminal .
 - in terminal type "bundle install" to add all the required gems present in the gem file.
-- now, type "db:migrate" to migrate all the tables to database.
+- now, type "Rails db:migrate" to migrate all the tables to database.
 - once it is done type " Rails s " in the command line to run in the local host 
 - so now on the ui side register yourself and then login .
 - post login in the home click on post listings to see all the posts
