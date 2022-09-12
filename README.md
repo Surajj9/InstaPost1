@@ -3,12 +3,12 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Prerequisites
+-Prerequisites
 The setups steps expect following tools installed on the system.
 
-Github
-Ruby 3.0.0
-Rails 7.0.0
+-Github
+-Ruby [3.0.0]
+-Rails [7.0.0]
 
  1. Check out the repository
 ```bash
