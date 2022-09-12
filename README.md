@@ -1,4 +1,4 @@
-# README
+ README
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -10,24 +10,28 @@ Github
 Ruby 3.0.0
 Rails 7.0.0
 
-# 1. Check out the repository
-
+ 1. Check out the repository
+```bash
 https://github.com/Surajj9/InstaPost1.git
+```
 
 
 
 
-# go to your terminal  to add all the required gems present in the gem file.
-  
+- go to your terminal  to add all the required gems present in the gem file.
+  ```bash
   gem bundle install
+  ```
 
-# then, to migrate all the tables to database.
-
+- then, to migrate all the tables to database.
+  ```bash
   Rails db:migrate
+  ```
   
- # Start the Rails server
-
+ - Start the Rails server
+    ```bash
   Rails s 
+   ```
   
   And now you can visit the site with the URL http://localhost:3000
 
@@ -40,7 +44,9 @@ https://github.com/Surajj9/InstaPost1.git
 
 
 
-# testing
+- testing
+  ```bash
  rails test
+  ```
 
 * ...
